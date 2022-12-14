@@ -1,0 +1,48 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: rgb(141, 141, 141);
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+}
+
+.navbar{
+    width: 30%;
+    padding: 30px;
+    background-color: rgb(184, 184, 184);
+}
+
+.content{
+    width: 70%;
+    background-color: rgb(226, 226, 226);
+    padding: 30px;
+}
+
+.footer{
+    background-color: grey;
+    text-align: center;
+    padding: 20px 0;    
+}
+
+.quem{
+    width: 40%;
+}
+
+.produto{
+    padding: 20px 0 7px 0;
+}

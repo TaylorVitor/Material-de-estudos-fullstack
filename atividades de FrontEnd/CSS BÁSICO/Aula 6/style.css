@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(223, 223, 223);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .container{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .profile{
+        text-align: center;
+        margin-bottom:  0px;
+    }
+
+
+.foto{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 45%;
+    margin: 30px 30px 0px 0px; 
+    box-shadow: 1px 0px 2px rgb(0, 0, 0);
+}
+
+.icons{
+    width: 20px;
+}
+
+.tirar-{
+    text-decoration: none;
+}
+
+.gre{
+    margin: 0 15px 0 15px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+h2{
+    margin-top: 0px;
+    font-style: italic;
+    color: rgb(80, 80, 80);
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+p{
+    line-height: 25px;
+}
+
+

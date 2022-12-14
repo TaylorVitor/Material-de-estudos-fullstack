@@ -1,0 +1,19 @@
+
+
+
+div {
+    margin: 20px;
+    transition: 800ms ease;
+}
+
+input {
+    transition: 800ms ease;
+}
+
+.inputErro {
+    border: 1px solid red;
+}
+
+span {
+    color: red;
+}

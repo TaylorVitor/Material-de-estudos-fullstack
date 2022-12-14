@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="salvar.html" method="get" > 
+
+        <label for="Nome" >Nome</label>
+        <input id="Nome" name="nome" type="text" placeholder=" Digite seu nome">
+
+        <BR><BR>
+
+        <label for="Email" >Email:</label>
+        <input id="Email" name="e-mail" type="email" placeholder="Digite seu email">
+
+        <BR><BR>
+
+        <label for="Senha" >Senha:</label>
+        <input id="Senha" name="Senha" type="password" placeholder="Digite sua senha">
+
+        <BR><BR>  
+
+         <label>Sexo</label>
+            <br>
+         <input name="Sexo" type="radio" value="Masculino" id="Masculino" > <label for="Masculino">Masculino</label>
+         <br>
+         <input name="Sexo" type="radio" value="Feminino" id="Feminino"> <label for="Feminino">Feminino</label>
+         <br>
+         <input name="Sexo" type="radio" value="Não definidos" id="Não definidos" > <label for="Não definidos">Não definidos</label>  
+
+         <br><br>
+
+         <label>Habilidades</label>
+         <br>
+         <input type="checkbox" id="JavaScript" value="JavaScript" > <label for="JavaScript" >JavaScript</label>
+         <br>
+         <input id="PHP" type="checkbox" value="PHP" > <label for="PHP" >PHP</label>
+         <br>
+         <input id="Java" type="checkbox" value="Java"> <label for="Java" >Java</label>
+         <br>
+         <input id="Css" type="checkbox" value="Css" > <label for="Css" >Css</label>   
+
+         <br><br>
+
+          <label>Cidade:</label>
+          <br>
+
+         <select name="Cidade">
+            <option selected value="">--selecione-- </option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Belo Hozinte">Belo Hozinte</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+         </select>
+          
+         <br><br>
+         <label>Carro</label>
+         <br>
+         <Select name="Carro">
+          
+          <optgroup label="Chevrolet">
+            <Option value="Celta">Celta</Option>
+            <Option value="Corsa">Corsa</Option>
+            <Option value="Monza">Monza</Option>
+          </optgroup>  
+
+          <optgroup label="Mercedez">
+            <option value="Classe A">Classe A</option>
+          </optgroup>
+
+          <optgroup label="Fiat">
+            <option value="Bravo">Bravo</option>
+          </optgroup>
+
+          <optgroup label="Kia">
+            <option value="Cerato">Cerato</option>
+          </optgroup>
+
+         </Select>
+         <br><br>
+
+         <label>Digite sua fruta preferida</label>
+         <br>
+         <input name="Frutas" list="ListaFruta" type="text" placeholder="Digite sua fruta">
+
+         <datalist id="ListaFruta">
+            <option value="Abacaxi">Abacaxi</option>
+            <option value="Melão">Melão</option>
+            <option value="Uva">Uva</option>
+         </datalist>
+
+         <br><br>
+
+         <label>Digite sua mensagem</label>
+         <br>
+
+         <textarea name="Mensagem" cols="60" rows="10"></textarea>
+
+         <br><br>
+        <button>Envie seus dados</button>
+     </form>
+
+</body>
+</html>

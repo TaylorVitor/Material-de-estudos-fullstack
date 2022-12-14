@@ -1,0 +1,45 @@
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+    @import 'variable';
+    @import 'base';
+
+
+    .box{
+        width: 30%;
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        &.active{
+            background-color: red;
+        }
+
+        h2{
+            font-size: 22px;
+        }
+
+        p{
+            font-size: 10px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+        a{
+            color: green;
+
+            &:hover{
+                color: rgb(229, 255, 0);
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+}

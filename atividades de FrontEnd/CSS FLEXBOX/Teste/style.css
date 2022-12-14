@@ -1,0 +1,29 @@
+
+.container{
+    height: 600px;
+    background: silver;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background: blue;
+}
+
+.green{
+    background: green;
+}
+
+.pink{
+    background-color: rgb(61, 0, 160);
+}

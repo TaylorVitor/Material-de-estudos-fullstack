@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://flexboxfroggy.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Flexbox Froggy - A game for learning CSS flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="https://flexboxfroggy.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flexbox Froggy">
+    <meta property="og:description" content="A game for learning CSS flexbox">
+    <meta property="og:image" content="https://flexboxfroggy.com/images/screenshot.png">
+    <meta property="fb:app_id" content="916849395036923">
+    <meta name="twitter:url" content="https://flexboxfroggy.com">
+    <meta name="twitter:title" content="Flexbox Froggy">
+    <meta name="twitter:description" content="A game for learning CSS flexbox">
+    <meta name="twitter:image" content="https://flexboxfroggy.com/images/screenshot.png">
+    <link rel="stylesheet" href="./Flexbox Froggy - A game for learning CSS flexbox_files/animate.min.css">
+    <link href="./Flexbox Froggy - A game for learning CSS flexbox_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Flexbox Froggy - A game for learning CSS flexbox_files/style.css">
+  </head>
+  <body>
+    <section id="sidebar">
+      <div class="header">
+        <div>
+          <h1 class="title">Flexbox Froggy</h1>
+        </div>
+        <div id="level-counter">
+          <span class="arrow left">
+            <span class="triangle"></span>
+          </span>
+          <span id="level-indicator">
+            <span id="labelLevel" class="translate">Level</span>
+            <span class="current">24</span>
+            <span id="labelOf" class="translate">of</span>
+            <span class="total">24</span>
+            <span class="caret">▾</span>
+          </span>
+          <span class="arrow right disabled">
+            <span class="triangle"></span>
+          </span>
+          <div id="levelsWrapper" class="tooltip" style="display: none;">
+            <div id="levels"><span class="level-marker solved" data-level="0" title="justify-content 1">1</span><span class="level-marker solved" data-level="1" title="justify-content 2">2</span><span class="level-marker solved" data-level="2" title="justify-content 3">3</span><span class="level-marker solved" data-level="3" title="justify-content 4">4</span><span class="level-marker solved" data-level="4" title="align-items 1">5</span><span class="level-marker solved" data-level="5" title="align-items 2">6</span><span class="level-marker solved" data-level="6" title="align-items 3">7</span><span class="level-marker solved" data-level="7" title="flex-direction 1">8</span><span class="level-marker solved" data-level="8" title="flex-direction 2">9</span><span class="level-marker solved" data-level="9" title="flex-direction 3">10</span><span class="level-marker solved" data-level="10" title="flex-direction 4">11</span><span class="level-marker solved" data-level="11" title="flex-direction 5">12</span><span class="level-marker solved" data-level="12" title="flex-direction 6">13</span><span class="level-marker solved" data-level="13" title="order 1">14</span><span class="level-marker solved" data-level="14" title="order 2">15</span><span class="level-marker solved" data-level="15" title="align-self 1">16</span><span class="level-marker solved" data-level="16" title="align-self 2">17</span><span class="level-marker solved" data-level="17" title="flex-wrap 1">18</span><span class="level-marker solved" data-level="18" title="flex-wrap 2">19</span><span class="level-marker solved" data-level="19" title="flex-flow 1">20</span><span class="level-marker solved" data-level="20" title="align-content 1">21</span><span class="level-marker solved" data-level="21" title="align-content 2">22</span><span class="level-marker solved" data-level="22" title="align-content 3">23</span><span class="level-marker solved current" data-level="23" title="align-content 4">24</span></div>
+            <div id="labelReset" class="translate">Reset</div>
+          </div>
+        </div>
+      </div>
+      <p id="instructions"><p>Bring the frogs home one last time by using the CSS properties you've learned:</p><ul><li><code class="help">justify-content</code></li><li><code class="help">align-items</code></li><li><code class="help">flex-direction</code></li><li><code class="help">order</code></li><li><code class="help">align-self</code></li><li><code class="help">flex-wrap</code></li><li><code class="help">flex-flow</code></li><li><code class="help">align-content</code><img src="./Flexbox Froggy - A game for learning CSS flexbox_files/finish_flexbox_froggy.png"></li></ul></p>
+      <div id="editor" class="">
+        <div id="css">
+          <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+          <pre id="before">#pond {
+  display: flex;
+</pre>
+          <textarea id="code" autofocus="" autocapitalize="none" style="height: 84px;"></textarea>
+          <pre id="after">}</pre>
+        </div>
+        <button id="next" class="translate animated animation">Next</button>
+      </div>
+      <div id="share" style="display: none;">
+        <div class="games">
+          <a target="_blank" data-title="Grid Garden" href="https://codepip.com/games/grid-garden/">
+            <img src="./Flexbox Froggy - A game for learning CSS flexbox_files/grid-garden.png">
+          </a>
+          <a target="_blank" data-title="Nth Cart" href="https://codepip.com/">
+            <img src="./Flexbox Froggy - A game for learning CSS flexbox_files/nth-cart.png">
+          </a>
+          <a target="_blank" data-title="Disarray" href="https://codepip.com/">
+            <img src="./Flexbox Froggy - A game for learning CSS flexbox_files/disarray.png">
+          </a>
+          <a target="_blank" data-title="Code Crunchers" href="https://codepip.com/">
+            <img src="./Flexbox Froggy - A game for learning CSS flexbox_files/code-crunchers.png">
+          </a>
+        </div>
+        <p class="social">
+          <span id="tweet">
+            <a href="https://twitter.com/share" class="twitter-share-button" {count}="" data-url="https://flexboxfroggy.com" data-via="playcodepip">Tweet</a>
+            <a href="https://twitter.com/playcodepip" class="twitter-follow-button" data-show-count="false">Follow @playcodepip</a>
+          </span>
+          <span class="fb-like" data-href="https://flexboxfroggy.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
+        </p>
+      </div>
+
+      <div class="bsa-custom"></div>
+
+      <div class="credits">
+        <span id="labelFooter" class="translate">Flexbox Froggy is created by</span>
+        <a href="https://codepip.com/">Codepip</a> •
+        <a href="https://github.com/thomaspark/flexboxfroggy/">GitHub</a> •
+        <a href="https://twitter.com/playcodepip">Twitter</a> •
+        <span id="settings">
+          <span id="labelSettings" class="toggle translate">Settings</span>
+          <span class="tooltip">
+            <section>
+              <h4 id="labelLanguage" class="translate">Language</h4>
+              <select id="language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="nl">Nederlands</option>
+                <option value="pt-br">Português</option>
+                <option value="ca">Català</option>
+                <option value="gl">Galego</option>
+                <option value="it">Italiano</option>
+                <option value="sv">Svenska</option>
+                <option value="fi">Suomi</option>
+                <option value="da">Dansk</option>
+                <option value="pl">Polski</option>
+                <option value="cs">Česky</option>
+                <option value="hu">Magyar</option>
+                <option value="ro">Română</option>
+                <option value="bg">Български</option>
+                <option value="et">Eesti</option>
+                <option value="lv">Latviešu</option>
+                <option value="lt">Lietuvių</option>
+                <option value="uk">Українська</option>
+                <option value="ru">Русский</option>
+                <option value="sr">Српски</option>
+                <option value="bs">Bosanski</option>
+                <option value="mk">Македонски</option>
+                <option value="el">Ελληνικά</option>
+                <option value="tr">Türkçe</option>
+                <option value="he">עברית</option>
+                <option value="ar">العربية</option>
+                <option value="fa">فارسی</option>
+                <option value="hi">हिंदी</option>
+                <option value="te">తెలుగు</option>
+                <option value="ta">தமிழ்</option>
+                <option value="ml">മലയാളം</option>
+                <option value="zh-cn">简体中文</option>
+                <option value="zh-tw">繁體中文</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="eo">Esperanto</option>
+              </select>
+            </section>
+            <section>
+              <h4 id="labelDifficulty" class="translate">Difficulty</h4>
+              <form id="difficulty">
+                <div>
+                  <input type="radio" name="difficulty" id="difficultyEasy" value="easy" checked="">
+                  <label id="labelDifficultyEasy" for="difficultyEasy" class="translate">Beginner</label>
+                </div>
+                <div>
+                  <input type="radio" name="difficulty" id="difficultyMedium" value="medium">
+                  <label id="labelDifficultyMedium" for="difficultyMedium" class="translate">Intermediate - No Directions</label>
+                </div>
+                <div>
+                  <input type="radio" name="difficulty" id="difficultyHard" value="hard">
+                  <label id="labelDifficultyHard" for="difficultyHard" class="translate">Expert - No Directions &amp; Random Levels</label>
+                </div>
+              </form>
+            </section>
+            <section>
+              <h4 id="labelColorblind" class="translate">Colorblind Mode</h4>
+              <form id="colorblind">
+                <div>
+                  <div>
+                    <input type="radio" name="colorblind" id="colorblindOff" value="false" checked="">
+                    <label id="labelColorblindOff" for="colorblindOff" class="translate">Off</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="colorblind" id="colorblindOn" value="true">
+                    <label id="labelColorblindOn" for="colorblindOn" class="translate">On</label>
+                  </div>
+              
+            </div></form></section>
+          </span>
+        </span>
+      </div>
+      <div class="credits">
+        <span id="gridGarden" class="translate">Want to learn CSS grid? Play</span> <a href="https://codepip.com/games/grid-garden/">Grid Garden</a>.
+      </div>
+    </section>
+    <section id="view">
+      <div id="board">
+        <div id="pond" style="flex-wrap:wrap-reverse;
+flex-direction:column-reverse;
+justify-content:center;
+align-content:space-between"><div class="frog red"><div class="bg animated pulse infinite"></div></div><div class="frog green"><div class="bg animated pulse infinite"></div></div><div class="frog green"><div class="bg animated pulse infinite"></div></div><div class="frog green"><div class="bg animated pulse infinite"></div></div><div class="frog green"><div class="bg animated pulse infinite"></div></div><div class="frog yellow"><div class="bg animated pulse infinite"></div></div><div class="frog yellow"><div class="bg animated pulse infinite"></div></div></div>
+        <div id="background" style="flex-flow: column-reverse wrap-reverse; place-content: space-between center;"><div class="lilypad red"><div class="bg" style="transform: scale(0.977225) rotate(289.743deg);"></div></div><div class="lilypad green"><div class="bg" style="transform: scale(0.976058) rotate(211.992deg);"></div></div><div class="lilypad green"><div class="bg" style="transform: scale(0.841445) rotate(220.51deg);"></div></div><div class="lilypad green"><div class="bg" style="transform: scale(0.87754) rotate(16.7129deg);"></div></div><div class="lilypad green"><div class="bg" style="transform: scale(0.899188) rotate(114.714deg);"></div></div><div class="lilypad yellow"><div class="bg" style="transform: scale(0.939511) rotate(311.741deg);"></div></div><div class="lilypad yellow"><div class="bg" style="transform: scale(0.909115) rotate(159.935deg);"></div></div></div>
+      </div>
+    </section>
+    <script id="facebook-jssdk" src="./Flexbox Froggy - A game for learning CSS flexbox_files/sdk.js.download"></script><script id="twitter-wjs" src="./Flexbox Froggy - A game for learning CSS flexbox_files/widgets.js.download"></script><script async="" src="./Flexbox Froggy - A game for learning CSS flexbox_files/analytics.js.download"></script><script src="./Flexbox Froggy - A game for learning CSS flexbox_files/jquery.min.js.download"></script>
+    <script src="./Flexbox Froggy - A game for learning CSS flexbox_files/levels.js.download"></script>
+    <script src="./Flexbox Froggy - A game for learning CSS flexbox_files/docs.js.download"></script>
+    <script src="./Flexbox Froggy - A game for learning CSS flexbox_files/messages.js.download"></script>
+    <script src="./Flexbox Froggy - A game for learning CSS flexbox_files/game.js.download"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-23019901-13', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=916849395036923";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- BuySellAds -->
+    <script type="text/javascript" src="./Flexbox Froggy - A game for learning CSS flexbox_files/monetization.custom.js.download"></script>
+    <script>
+    (function() {
+      if (typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('custom', 'CK7D427U', 'placement:flexboxfroggycom', {
+          target: '.bsa-custom',
+          template:
+    `
+    <div class="native-ad">
+      <a href="##statlink##"><span class="sponsor">Sponsor</span> ##company## — ##description##</a>
+    </div>
+    `
+        });
+      }
+    })();
+    </script>
+  
+
+</body></html>

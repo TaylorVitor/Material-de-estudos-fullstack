@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(219, 219, 219);
+    background-image: url(Cake.jpg);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.navbar{
+    width: 20%;
+    padding: 30px;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    border-radius: 10px 0;
+    background-color: blue;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.content{
+    width: 80%;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 2px 2px rgb(255, 255, 255);
+    border-radius: 40px 0;
+    margin: 20px 20px 20px 0;
+}
+
+.footer{
+   position:-ms-page;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    padding: 20px 0;
+}

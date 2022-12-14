@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(223, 223, 223);
+}
+
+.foto{
+    border: 5px inset rgb(71, 71, 71);
+    border-radius: 45%;
+    margin: 30px 30px 30px 0px; 
+}
+
